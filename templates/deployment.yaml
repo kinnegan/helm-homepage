@@ -8,6 +8,11 @@ metadata:
   namespace: test-ngnx
 spec:
   replicas: {{ .Values.replicas }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 2
+      maxSurge: 20%
   selector:
     matchLabels:
       app: {{ .Chart.Name }}
