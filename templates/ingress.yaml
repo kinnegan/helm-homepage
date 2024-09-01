@@ -4,6 +4,7 @@ kind: Ingress
 metadata:
   name: test-nginx-ingress
   namespace: test-ngnx
+    Annotations: nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   ingressClassName: "nginx"
   tls:
