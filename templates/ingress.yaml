@@ -8,7 +8,7 @@ spec:
   ingressClassName: "nginx"
   tls:
    - hosts:
-        - "homepage.local."
+        - "homepage.local"
   rules:
     - host: "homepage.local"
       http:
