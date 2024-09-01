@@ -10,9 +10,9 @@ spec:
   ingressClassName: "nginx"
   tls:
    - hosts:
-        - "test-nginx.home.lan"
+        - "internal.kinnegan.org"
   rules:
-    - host: "test-nginx.home.lan"
+    - host: "internal.kinnegan.org"
       http:
         paths:
          - path: /
