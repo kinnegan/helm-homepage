@@ -4,15 +4,13 @@ kind: Ingress
 metadata:
   name: test-nginx-ingress
   namespace: test-ngnx
-  annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   ingressClassName: "nginx"
   tls:
    - hosts:
-        - "internal.kinnegan.org"
+        - "homepage.local."
   rules:
-    - host: "internal.kinnegan.org"
+    - host: "homepage.local"
       http:
         paths:
          - path: /
