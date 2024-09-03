@@ -1,16 +1,10 @@
----
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: test-nginx-ingress
   namespace: test-ngnx
-  annotations:
-    nginx.ingress.kubernetes.io/ssl-redirect: "false"
 spec:
   ingressClassName: "nginx"
-  tls:
-   - hosts:
-        - "test-nginx.home.lan"
   rules:
     - host: "test-nginx.home.lan"
       http:
@@ -21,4 +15,4 @@ spec:
              service:
                name: nginx-service
                port:
-                 number: 80 
+                 number: 80
