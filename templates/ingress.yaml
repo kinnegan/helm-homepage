@@ -10,9 +10,9 @@ spec:
   ingressClassName: "nginx"
   tls:
    - hosts:
-        - "homepage.local"
+        - "test-nginx.home.lan"
   rules:
-    - host: "homepage.local"
+    - host: "test-nginx.home.lan"
       http:
         paths:
          - path: /
