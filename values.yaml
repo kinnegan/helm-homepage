@@ -2,7 +2,7 @@ image:
   repository: kinnegan/test-nginx
   tag: 1
 imagePullPolicy: IfNotPresent
-replicas: 2
+replicas: 1
 resources:
   requests:
     memory: "64Mi"
